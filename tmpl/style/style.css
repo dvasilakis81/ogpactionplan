@@ -1,0 +1,109 @@
+:root {
+  --border-status-started: 1px #D7AC46 solid;
+  --background-status-started: #FFCD57;
+  --border-status-inprogress: 1px #399DC1 solid;
+  --background-status-inprogress: #50C1E9;
+  --border-status-cancelled: 1px #CA6F38 solid;
+  --background-status-cancelled: #F38C51;
+  --border-status-completed: 1px #1FA767 solid;
+  --background-status-completed: #40CF8D;
+  --border-status-incomplete: 1px #C8423F solid;
+  --background-status-incomplete: #F66262;
+}
+
+.action-plan-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex: 1;
+}
+
+.action-plan-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-bottom: 10px;
+}
+
+.action-plan-row-2 {
+  display: flex;
+  flex: 1;
+  flex-direction: row;  
+}
+
+.action-plan-row-space-between {
+  justify-content: space-between;
+  max-height: fit-content;
+}
+
+.action-plan-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 10px;
+  opacity: 1;
+}
+
+.action-plan-subject {
+  padding: 10px;
+  color: #333333;
+  font-size: 22px;
+  line-height: 24px;
+  width: calc(100% - 50px);
+  float: left;
+}
+
+.action-plan-milestone-number-label {
+  color: #333333;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.toggle-details {
+  float: right;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.toggle-visible {
+  background: url(../img/display-details.png) center no-repeat;
+  margin-top: 8px;
+}
+
+.toggle-hidden {
+  background: url(../img/hide-details.png) center no-repeat;
+  margin-top: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.milestone-info-progress-status {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F9FA;
+  height: 100%;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

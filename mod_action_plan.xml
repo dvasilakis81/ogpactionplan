@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="5.0" client="site" method="upgrade">
+  <name>Action Plan</name>
+  <description>An action plan</description>
+  <author>Rinenweb</author>
+  <authorEmail>info@rinenweb.eu</authorEmail>
+  <authorUrl>https://www.rinenweb.eu</authorUrl>
+  <version>1.0.0</version>
+  <files>
+    <filename module="mod_action_plan">mod_action_plan.php</filename>
+    <folder>tmpl</folder>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/style.css</filename>
+    <filename>tmpl/script.js</filename>
+    <filename>tmpl/display-details.png</filename>
+    <filename>tmpl/hide-details.png</filename>
+    <filename>tmpl/point-right-inactive.png</filename>
+    <filename>tmpl/point-left-inactive.png</filename>
+  </files>
+  <languages>
+    <language tag="en-GB">language/en-GB/mod_action_plan.ini</language>
+    <language tag="en-GB">language/en-GB/mod_action_plan.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" label="Module Parameters">
+        <field name="action_plan_items" type="subform" label="MOD_ACTION_PLAN_ITEM" multiple="true">
+          <form>
+            <fields name="action_plan_items_fields">
+              <!-- <fieldset name="action_plan_items_2" label="Action Plan Fields"> -->
+              <field name="subject" type="text" filter="raw" label="MOD_ACTION_PLAN_ITEM_SUBJECT" />
+              <field name="subject_url" type="text" filter="raw" label="MOD_ACTION_PLAN_ITEM_SUBJECT_URL" />
+              <field name="milestone_fields" type="subform" label="MOD_ACTION_PLAN_ITEM_MILESTONE_FIELDS" multiple="true">
+                <form>
+                  <fields name="milestone_fields">
+                    <!-- <fieldset name="milestones" label="Milestone Form Fields"> -->
+                    <field name="milestone_subject" type="text" filter="raw" label="MOD_MILESTONE_SUBJECT" />
+                    <field name="milestone_start_date" type="calendar" label="MOD_MILESTONE_CHOOSE_START_DATE"/>
+                    <field name="milestone_end_date" type="calendar" label="MOD_MILESTONE_CHOOSE_END_DATE" />
+                    <field name="list_milestone_status" type="list" label="MOD_MILESTONE_CHOOSE_STATUS">
+                      <option value="start">MOD_MILESTONE_STATUS_STARTED</option>
+                      <option value="in_progress">MOD_MILESTONE_STATUS_IN_PROGRESS</option>
+                      <option value="canceled">MOD_MILESTONE_STATUS_CANCELLED</option>
+                      <option value="completed">MOD_MILESTONE_STATUS_COMPLETED</option>
+                      <option value="Incomplete">MOD_MILESTONE_STATUS_INCOMPLETE</option>
+                    </field>
+                    <field name="milestone_results" type="editor" filter="raw" label="MOD_MILESTONE_RESULTS" />
+                    <!-- </fieldset> -->
+                  </fields>
+                </form>
+              </field>
+              <!-- </fieldset> -->
+            </fields>
+          </form>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

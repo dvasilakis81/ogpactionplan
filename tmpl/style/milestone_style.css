@@ -1,0 +1,126 @@
+.action-plan-milestone-item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;  
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 100px;
+}
+
+.action-plan-milestone-item-started {
+  border: var(--border-status-started);
+  background: var(--background-status-started);
+  height: 30px;
+}
+
+.action-plan-milestone-item-inprogress {
+  border: var(--border-status-inprogress);
+  background: var(--background-status-inprogress);
+}
+
+.action-plan-milestone-item-cancelled {
+  border: var(--border-status-cancelled);
+  background: var(--background-status-cancelled);
+}
+
+.action-plan-milestone-item-completed {
+  border: var(--border-status-completed);
+  background: var(--background-status-completed);
+}
+
+.action-plan-milestone-item-incomplete {
+  border: var(--border-status-incomplete);
+  background: var(--background-status-incomplete);
+}
+
+.action-plan-first-milestone-item {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.action-plan-last-milestone-item {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.action-plan-milestone-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: 0px;
+  margin-left: 0px;  
+  overflow: hidden;
+  height: 0px; /* Prevent overflow while collapsing */
+  transition: height 0.5s ease, padding 0.5s ease;
+  padding: 0 10px; /* Initially no padding */
+  height: 0;  /* Collapsed state */
+}
+
+.action-plan-milestones-content-visible {
+   height: auto
+}
+
+.milestone-info-index {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background: #E6EEF1;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: #a2a9ac;
+  font-size: 20px;
+  font-weight: bold;  
+}
+
+.milestone-info-subject {
+  display: flex;
+  flex: 6;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-right: 1px solid #E5E9EA;
+  background-color: #F5F9FA;
+  color: #282828;
+  font-size: 16px;
+  margin: 0px;
+  line-height: 30px;
+  min-height: 100px;
+  width: 100%;
+  height: 100%;
+
+}
+
+.action-plan-milestone-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding-bottom: 10px;
+}
+
+.action-plan-milestone-items-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.action-plan-milestone-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .action-plan-milestone-row {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+}
