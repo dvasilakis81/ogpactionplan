@@ -1,4 +1,4 @@
-function changeClassProperty(itemindex) {
+function expandActionPlanMilestonesContent(itemindex) {
 
   //change arrow icon
   const icon = document.getElementById('arrow-icon');
