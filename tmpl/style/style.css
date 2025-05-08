@@ -65,6 +65,15 @@
   font-weight: bold;
 }
 
+.action-plan-milestone-subject-result-link {
+  display: flex; 
+  flex : 1; 
+  flex-direction: column; 
+  background-color: #F5F9FA; 
+  justify-content: center; 
+  align-items: center;
+}
+
 .toggle-details {
   float: right;
   width: 20px;
