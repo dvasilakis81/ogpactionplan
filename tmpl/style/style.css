@@ -57,23 +57,6 @@
   float: left;
 }
 
-.action-plan-milestone-number-label {
-  color: #333333;
-  font-size: 18px;
-  padding-left: 10px;
-  padding-right: 20px;
-  font-weight: bold;
-}
-
-.action-plan-milestone-subject-result-link {
-  display: flex; 
-  flex : 1; 
-  flex-direction: column; 
-  background-color: #F5F9FA; 
-  justify-content: center; 
-  align-items: center;
-}
-
 .toggle-details {
   float: right;
   width: 20px;

@@ -17,8 +17,9 @@
                 <?php echo $milestone_item->milestone_fields->milestone_subject ?>
               </div>
               <div class="action-plan-milestone-row">
-                <a onClick='expandActionPlanMilestonesContent("<?php echo $actionplanitemindex . '-' . $index_of_milestone ?>")'>Αποτελέσματα</a>
-                <div style="margin: 10px"></div>
+              <div style="margin-left: 10px"></div>
+                <a onClick='expandActionPlanResultsContent("<?php echo $actionplanitemindex . '-' . $index_of_milestone ?>")'>Αποτελέσματα</a>
+                <div style="margin-left: 10px"></div>
                 <a id="<?php echo 'arrow-icon-results-' . $actionplanitemindex . '-' . $index_of_milestone ?>"
                   class="toggle-details toggle-visible"
                   onClick='expandActionPlanResultsContent("<?php echo $actionplanitemindex . '-' . $index_of_milestone ?>")'>

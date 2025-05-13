@@ -3,7 +3,7 @@
   flex: 1;
   justify-content: center;
   align-items: center;  
-  line-height: 20px;
+  line-height: 30px;
   font-size: 16px;
   font-weight: 400;
   min-width: 100px;
@@ -80,11 +80,10 @@
 
 .milestone-info-index {
   display: flex;
-  flex: 1;
+  flex: 0.2;
   align-items: center;
   justify-content: center;
-  background: #E6EEF1;
-  width: 100%;
+  background: #E6EEF1;  
   text-align: center;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -130,6 +129,22 @@
   flex-basis: 100%;
   flex: 1;
 }
+
+.action-plan-milestone-number-label {
+  color: #333333;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.action-plan-milestone-subject-result-link {
+  display: flex; 
+  flex : 1; 
+  flex-direction: column; 
+  background-color: #F5F9FA;   
+}
+
 
 @media (max-width: 600px) {
   .action-plan-milestone-row {
