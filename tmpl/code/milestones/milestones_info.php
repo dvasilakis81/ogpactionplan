@@ -18,7 +18,8 @@
               </div>
               <div class="action-plan-milestone-row">
               <div style="margin-left: 10px"></div>
-                <a onClick='expandActionPlanResultsContent("<?php echo $actionplanitemindex . '-' . $index_of_milestone ?>")'>Αποτελέσματα</a>
+                <a class='action-plan-milestone-result-link' onClick='expandActionPlanResultsContent("<?php echo $actionplanitemindex . '-' . $index_of_milestone ?>")'
+                style="margin-top: 4px !important;">Αποτελέσματα</a>
                 <div style="margin-left: 10px"></div>
                 <a id="<?php echo 'arrow-icon-results-' . $actionplanitemindex . '-' . $index_of_milestone ?>"
                   class="toggle-details toggle-visible"

@@ -95,10 +95,8 @@
 .milestone-info-subject {
   display: flex;
   flex-direction: column;
-  flex: 6;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  flex: 6;  
+  padding: 10px;
   border-right: 1px solid #E5E9EA;
   background-color: #F5F9FA;
   color: #282828;
@@ -145,6 +143,10 @@
   background-color: #F5F9FA;   
 }
 
+.action-plan-milestone-result-link {
+  text-decoration: underline;
+  color: var(--link-color);
+}
 
 @media (max-width: 600px) {
   .action-plan-milestone-row {
