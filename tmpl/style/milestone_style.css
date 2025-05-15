@@ -143,9 +143,14 @@
   background-color: #F5F9FA;   
 }
 
-.action-plan-milestone-result-link {
-  text-decoration: underline;
+.action-plan-milestone-result-link {  
   color: var(--link-color);
+}
+
+.action-plan-milestone-result-link {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
