@@ -20,7 +20,7 @@
         <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'in_progress') ? 'class="action-plan-status-radio-inprogress"' : ''; ?>/>
       </div>
       <div class="action-plan-status-radio-wrapper">        
-        <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'cancelled') ? 'class="action-plan-status-radio-cancelled"' : ''; ?> />
+        <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'canceled') ? 'class="action-plan-status-radio-cancelled"' : ''; ?> />
       </div>
       <div class="action-plan-status-radio-wrapper">
         <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'completed') ? 'class="action-plan-status-radio-completed"' : ''; ?> />

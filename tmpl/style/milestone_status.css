@@ -35,7 +35,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
-  max-width: 40px;
+  overflow-wrap: anywhere;  
   width: 100%;
 }
 

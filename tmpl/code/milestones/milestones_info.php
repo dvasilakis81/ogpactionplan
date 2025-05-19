@@ -15,16 +15,16 @@
             <div class="action-plan-milestone-subject-result-link">
               <div class="milestone-info-subject">
                 <?php echo $milestone_item->milestone_fields->milestone_subject ?>
-              </div>
-              <div class="action-plan-milestone-row">
-              <div style="margin-left: 10px"></div>
-                <a class='action-plan-milestone-result-link' onClick='expandActionPlanResultsContent("<?php echo $actionplanitemindex . '-' . $index_of_milestone ?>")'
-                style="margin-top: 4px !important;">Αποτελέσματα</a>
-                <div style="margin-left: 10px"></div>
-                <a id="<?php echo 'arrow-icon-results-' . $actionplanitemindex . '-' . $index_of_milestone ?>"
-                  class="toggle-details toggle-visible"
-                  onClick='expandActionPlanResultsContent("<?php echo $actionplanitemindex . '-' . $index_of_milestone ?>")'>
-                </a>
+                <br />
+                <div class="action-plan-milestone-row">                  
+                  <a class='action-plan-milestone-result-link' onClick='expandActionPlanResultsContent("<?php echo $actionplanitemindex . '-' . $index_of_milestone ?>")'
+                    style="margin-top: 4px !important;">Αποτελέσματα</a>
+                  <div style="margin-left: 10px"></div>
+                  <a id="<?php echo 'arrow-icon-results-' . $actionplanitemindex . '-' . $index_of_milestone ?>"
+                    class="toggle-details toggle-visible"
+                    onClick='expandActionPlanResultsContent("<?php echo $actionplanitemindex . '-' . $index_of_milestone ?>")'>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
