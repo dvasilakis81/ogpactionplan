@@ -10,12 +10,12 @@
     <filename module="mod_action_plan">mod_action_plan.php</filename>
     <folder>tmpl</folder>
     <filename>tmpl/default.php</filename>
-    <filename>tmpl/style.css</filename>
-    <filename>tmpl/script.js</filename>
-    <filename>tmpl/display-details.png</filename>
-    <filename>tmpl/hide-details.png</filename>
-    <filename>tmpl/point-right-inactive.png</filename>
-    <filename>tmpl/point-left-inactive.png</filename>
+    <filename>tmpl/style/milestone_status.css</filename>
+    <filename>tmpl/style/milestone_style.css</filename>
+    <filename>tmpl/style/style.css</filename>
+    <filename>tmpl/js/script.js</filename>
+    <filename>tmpl/img/display-details.png</filename>
+    <filename>tmpl/img/hide-details.png</filename>    
   </files>
   <languages>
     <language tag="en-GB">language/en-GB/mod_action_plan.ini</language>
@@ -38,11 +38,11 @@
                     <field name="milestone_start_date" type="calendar" label="MOD_MILESTONE_CHOOSE_START_DATE"/>
                     <field name="milestone_end_date" type="calendar" label="MOD_MILESTONE_CHOOSE_END_DATE" />
                     <field name="list_milestone_status" type="list" label="MOD_MILESTONE_CHOOSE_STATUS">
-                      <option value="start">MOD_MILESTONE_STATUS_STARTED</option>
+                      <option value="started">MOD_MILESTONE_STATUS_STARTED</option>
                       <option value="in_progress">MOD_MILESTONE_STATUS_IN_PROGRESS</option>
-                      <option value="canceled">MOD_MILESTONE_STATUS_CANCELLED</option>
+                      <option value="cancelled">MOD_MILESTONE_STATUS_CANCELLED</option>
                       <option value="completed">MOD_MILESTONE_STATUS_COMPLETED</option>
-                      <option value="Incomplete">MOD_MILESTONE_STATUS_INCOMPLETE</option>
+                      <option value="incomplete">MOD_MILESTONE_STATUS_INCOMPLETE</option>
                     </field>
                     <field name="milestone_results" type="editor" filter="raw" label="MOD_MILESTONE_RESULTS" />
                     <!-- </fieldset> -->

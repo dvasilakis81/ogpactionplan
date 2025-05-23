@@ -19,10 +19,10 @@
                   }
                   $milestone_status = $milestone_item->milestone_fields->list_milestone_status;
                   if ($milestone_status == 'started')
-                    $ret .= ' .action-plan-milestone-item-started';
+                    $ret .= ' action-plan-milestone-item-started';
                   else if ($milestone_status == 'in_progress')
                     $ret .= ' action-plan-milestone-item-inprogress';
-                  else if ($milestone_status == 'canceled')
+                  else if ($milestone_status == 'cancelled')
                     $ret .= ' action-plan-milestone-item-cancelled';
                   else if ($milestone_status == 'completed')
                     $ret .= ' action-plan-milestone-item-completed';

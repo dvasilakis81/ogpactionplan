@@ -14,19 +14,19 @@
   <div style="padding-top: 30px">
     <div class="action-plan-radio-line-container">
       <div class="action-plan-status-radio-wrapper">
-        <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'start') ? 'class="action-plan-status-radio-started"' : ''; ?> />
+        <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'started') ? 'class="action-plan-status-radio-started"' : ''; ?> />
       </div>
       <div class="action-plan-status-radio-wrapper">
         <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'in_progress') ? 'class="action-plan-status-radio-inprogress"' : ''; ?>/>
       </div>
-      <div class="action-plan-status-radio-wrapper">        
-        <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'canceled') ? 'class="action-plan-status-radio-cancelled"' : ''; ?> />
+      <div class="action-plan-status-radio-wrapper">
+        <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'cancelled') ? 'class="action-plan-status-radio-cancelled"' : ''; ?> />
       </div>
       <div class="action-plan-status-radio-wrapper">
         <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'completed') ? 'class="action-plan-status-radio-completed"' : ''; ?> />
       </div>
       <div class="action-plan-status-radio-wrapper">
-        <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'Incomplete') ? 'class="action-plan-status-radio-incomplete"' : ''; ?> />
+        <input type="radio" checked <?php echo ($milestone_item->milestone_fields->list_milestone_status == 'incomplete') ? 'class="action-plan-status-radio-incomplete"' : ''; ?> />
       </div>
     </div>
     <div class="action-plan-radio-text-container">

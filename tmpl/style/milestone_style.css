@@ -11,8 +11,7 @@
 
 .action-plan-milestone-item-started {
   border: var(--border-status-started);
-  background: var(--background-status-started);
-  height: 30px;
+  background: var(--background-status-started);  
 }
 
 .action-plan-milestone-item-inprogress {
