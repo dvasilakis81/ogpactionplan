@@ -1,8 +1,6 @@
 function expandActionPlanMilestonesContent(itemindex) {
   const icon = document.getElementById('arrow-icon-' + itemindex);
-  const el = document.getElementById('action-plan-milestones-' + itemindex);
-
-  if (el.dataset.lock === "true") return;
+  const el = document.getElementById('action-plan-milestones-' + itemindex);  
 
   var isOpen = false;
   if (icon.classList.contains('toggle-visible')) {
@@ -14,18 +12,15 @@ function expandActionPlanMilestonesContent(itemindex) {
     icon.classList.remove('toggle-hidden');
     icon.classList.add('toggle-visible');
     isOpen = true;
-  }
-  el.dataset.lock = "true";
+  }  
 
   collapseOrExpandElement(el, isOpen);
 }
-
 
 function expandActionPlanResultsContent(itemindex) {
   const icon = document.getElementById('arrow-icon-results-' + itemindex);
   const el = document.getElementById('action-plan-milestone-results-' + itemindex);
 
-  if (el.dataset.lock === "true") return;
 
   var isOpen = false;
   if (icon.classList.contains('toggle-visible')) {
@@ -38,11 +33,9 @@ function expandActionPlanResultsContent(itemindex) {
     icon.classList.add('toggle-visible');
     isOpen = true;
   }
-  el.dataset.lock = "true";
 
   collapseOrExpandElement(el, isOpen);
 }
-
 
 function collapseOrExpandElement(el, isOpen) {
   if (isOpen) {
