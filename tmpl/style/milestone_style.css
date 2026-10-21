@@ -2,36 +2,36 @@
   display: flex;
   flex: 1;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   line-height: 30px;
   font-size: 16px;
   font-weight: 400;
-  min-width: 100px;
+  min-width: 2.5em;
 }
 
 .action-plan-milestone-item-started {
-  border: var(--border-status-started);
-  background: var(--background-status-started);  
+  border: var(--ap-border-status-started);
+  background: var(--ap-background-status-started);
 }
 
 .action-plan-milestone-item-inprogress {
-  border: var(--border-status-inprogress);
-  background: var(--background-status-inprogress);
+  border: var(--ap-border-status-inprogress);
+  background: var(--ap-background-status-inprogress);
 }
 
 .action-plan-milestone-item-cancelled {
-  border: var(--border-status-cancelled);
-  background: var(--background-status-cancelled);
+  border: var(--ap-border-status-cancelled);
+  background: var(--ap-background-status-cancelled);
 }
 
 .action-plan-milestone-item-completed {
-  border: var(--border-status-completed);
-  background: var(--background-status-completed);
+  border: var(--ap-border-status-completed);
+  background: var(--ap-background-status-completed);
 }
 
 .action-plan-milestone-item-incomplete {
-  border: var(--border-status-incomplete);
-  background: var(--background-status-incomplete);
+  border: var(--ap-border-status-incomplete);
+  background: var(--ap-background-status-incomplete);
 }
 
 .action-plan-first-milestone-item {
@@ -45,36 +45,29 @@
 }
 
 .action-plan-milestone-container {
-  /* display: flex;
-  flex: 1;
-  flex-direction: column; */
   margin-right: 0px;
   margin-left: 0px;
   background-color: #F5F9FA;
-  overflow: hidden;  
-  height: 0px; /* Prevent overflow while collapsing */
-  transition: height 0.5s ease, padding 0.5s ease;
-  padding: 0 10px; /* Initially no padding */
-  height: 0;  /* Collapsed state */
+  overflow: hidden;
+  height: 0; /* collapsed */
+  transition: height 0.5s ease;
+  padding: 0 10px;
 }
 
-.action-plan-milestone-results-container {  
+.action-plan-milestone-results-container {
   margin-right: 0px;
   margin-left: 0px;
   overflow: hidden;
-  height: 0px; /* Prevent overflow while collapsing */
-  transition: height 0.5s ease, padding 0.5s ease;
-  padding: 0 10px; /* Initially no padding */
-  height: 0;  /* Collapsed state */ 
+  height: 0; /* collapsed */
+  transition: height 0.5s ease;
+  padding: 0 10px;
 }
 
-.action-plan-milestones-content-visible {
-  height: auto !important;
-  /* margin-right: 0px;
-  margin-left: 0px;
-  overflow: hidden;
-  transition: height 0.5s ease, padding 0.5s ease, opacity 0.5s ease;  
-  opacity: 1; */
+@media (prefers-reduced-motion: reduce) {
+  .action-plan-milestone-container,
+  .action-plan-milestone-results-container {
+    transition: none;
+  }
 }
 
 .milestone-info-index {
@@ -82,19 +75,19 @@
   flex: 0.2;
   align-items: center;
   justify-content: center;
-  background: #E6EEF1;  
+  background: #E6EEF1;
   text-align: center;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   color: #a2a9ac;
   font-size: 20px;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .milestone-info-subject {
   display: flex;
   flex-direction: column;
-  flex: 6;  
+  flex: 6;
   padding: 10px;
   border-right: 1px solid #E5E9EA;
   background-color: #F5F9FA;
@@ -123,7 +116,6 @@
 .action-plan-milestone-column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
   flex: 1;
 }
 
@@ -136,27 +128,32 @@
 }
 
 .action-plan-milestone-subject-result-link {
-  display: flex; 
-  flex : 1; 
-  flex-direction: column; 
-  background-color: #F5F9FA;   
-}
-
-.action-plan-milestone-result-link {  
-  color: var(--link-color);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #F5F9FA;
 }
 
 .action-plan-milestone-result-link {
-  color: var(--link-hover-color);
+  margin-top: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  line-height: inherit;
+  color: var(--link-color, #224faa);
   text-decoration: underline;
   cursor: pointer;
 }
 
+.action-plan-milestone-result-link:hover,
+.action-plan-milestone-result-link:focus-visible {
+  color: var(--link-hover-color, #424077);
+}
+
 @media (max-width: 600px) {
   .action-plan-milestone-row {
-    display: flex;
     flex-direction: column;
-    flex: 1;
     margin-bottom: 20px;
   }
 }
