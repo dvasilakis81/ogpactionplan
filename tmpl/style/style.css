@@ -1,14 +1,14 @@
-:root {
-  --border-status-started: 1px #D7AC46 solid;
-  --background-status-started: #FFCD57;
-  --border-status-inprogress: 1px #399DC1 solid;
-  --background-status-inprogress: #50C1E9;
-  --border-status-cancelled: 1px #CA6F38 solid;
-  --background-status-cancelled: #F38C51;
-  --border-status-completed: 1px #1FA767 solid;
-  --background-status-completed: #40CF8D;
-  --border-status-incomplete: 1px #C8423F solid;
-  --background-status-incomplete: #F66262;
+.mod-action-plan {
+  --ap-border-status-started: 1px #D7AC46 solid;
+  --ap-background-status-started: #FFCD57;
+  --ap-border-status-inprogress: 1px #399DC1 solid;
+  --ap-background-status-inprogress: #50C1E9;
+  --ap-border-status-cancelled: 1px #CA6F38 solid;
+  --ap-background-status-cancelled: #F38C51;
+  --ap-border-status-completed: 1px #1FA767 solid;
+  --ap-background-status-completed: #40CF8D;
+  --ap-border-status-incomplete: 1px #C8423F solid;
+  --ap-background-status-incomplete: #F66262;
 }
 
 .action-plan-container {
@@ -30,7 +30,7 @@
 .action-plan-row-2 {
   display: flex;
   flex: 1;
-  flex-direction: row;  
+  flex-direction: row;
 }
 
 .action-plan-row-space-between {
@@ -57,30 +57,30 @@
   float: left;
 }
 
-.toggle-details {
+.mod-action-plan .toggle-details {
   float: right;
   width: 20px;
   height: 20px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
   cursor: pointer;
   line-height: 24px;
 }
 
-.toggle-visible {
+.mod-action-plan .toggle-visible {
   background: url(../img/display-details.png) center no-repeat;
   margin-top: 8px;
 }
 
-.toggle-hidden {
+.mod-action-plan .toggle-hidden {
   background: url(../img/hide-details.png) center no-repeat;
   margin-top: 8px;
 }
 
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
+.mod-action-plan button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 .milestone-info-progress-status {
@@ -90,12 +90,16 @@
   height: 100%;
   padding: 10px;
   justify-content: center;
-
 }
 
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.ap-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
